@@ -12,4 +12,4 @@ def test_extract_date_from_soup():
 @pytest.mark.parametrize("country", ["poland", "germany", "netherlands"])
 def test_get_time_from_country(country: str):
     time = scraper.get_time_from_country(country)
-    assert re.search(r"^\d{2}:\d{2}:\d{2}$", time) is not None
+    assert re.search(r"^\d{2}:\d{2}:\d{2}", time) is not None
