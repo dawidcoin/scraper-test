@@ -4,7 +4,7 @@ function create_venv() {
   virtualenv venv
   source ./venv/bin/activate
   echo "Installing modules from 'requirements.txt'"
-  pip install requirements.txt
+  pip install -r requirements.txt
   echo "Done :)"
 }
 
