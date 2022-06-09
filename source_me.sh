@@ -8,3 +8,7 @@ function create_venv() {
 function activate() {
   source ./venv/bin/activate
 }
+
+function tests() {
+  python3 -m pytest
+}
